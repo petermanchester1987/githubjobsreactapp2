@@ -4,7 +4,7 @@ import axios from "axios";
 import { ACTIONS, fetchJobsReducer } from "./reducers/fetchJobsReducer";
 
 const BASE_URL =
-  "https://cors-anywhere.herokuaapp.com/https://jobs.github.com/positions.json";
+  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json";
 
 const useFetchJobs = (params, page) => {
   const [state, dispatch] = useReducer(fetchJobsReducer, {
