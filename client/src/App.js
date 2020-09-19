@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import useFetchJobs from "./useFetchJobs";
 import { Container } from "react-bootstrap";
+
 import Job from "./Job";
 import JobsPagination from "./JobsPagination";
 import SearchForm from "./SearchForm";
+import "./style.css";
+import "./loader1.css";
 
 function App() {
   const [params, setParams] = useState({});
@@ -19,6 +22,14 @@ function App() {
     });
   }
 
+  if (loading) {
+    return (
+      <div className="loader">
+        <div className="circle"></div>
+        <div className="circle"></div>
+      </div>
+    );
+  }
   return (
     <Container className="my-4">
       <h1 className="mb-4">GitHub Jobs</h1>
