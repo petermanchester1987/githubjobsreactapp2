@@ -24,9 +24,11 @@ function App() {
 
   if (loading) {
     return (
-      <div className="loader">
-        <div className="circle"></div>
-        <div className="circle"></div>
+      <div className="loader-box">
+        <div className="loader">
+          <div className="circle"></div>
+          <div className="circle"></div>
+        </div>
       </div>
     );
   }
