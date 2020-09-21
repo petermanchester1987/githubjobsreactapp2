@@ -22,16 +22,6 @@ function App() {
     });
   }
 
-  if (loading) {
-    return (
-      <div className="loader-box">
-        <div className="loader">
-          <div className="circle"></div>
-          <div className="circle"></div>
-        </div>
-      </div>
-    );
-  }
   return (
     <Container className="my-4">
       <h1 className="mb-4">GitHub Jobs</h1>
